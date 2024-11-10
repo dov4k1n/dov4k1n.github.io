@@ -11,7 +11,7 @@ footer.innerHTML = `
       Подписывайтесь на @tatarcham на YouTube
     </div>
     <div class="social-networks-item">
-      <a href="https://www.vk.com/tatarcham" class="social-networks-item-logo"><img src=0/"res/vk_icon.svg" class="logo">VK</img></a>
+      <a href="https://www.vk.com/tatarcham" class="social-networks-item-logo"><img src="/res/vk_icon.svg" class="logo">VK</img></a>
       Подписывайтесь на @tatarcham в VK
     </div>
   </div>
