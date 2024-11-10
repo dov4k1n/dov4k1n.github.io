@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фонетика</title>
+  <link rel="stylesheet" href="../css/theme.css">
+  <link rel="icon" type="../image/png" href="../res/tg_app_logo.webp">
+  <script src="../script.js" defer></script>
+</head>
+
+<body>
+<nav class="navbar">
+  <ul class="navbar-nav">
+    <li class="logo">
+      <a href="../index.html" class="nav-link">
+        <span class="link-text logo-text">tatarçam</span>
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fad"
+          data-icon="angle-double-right"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+        >
+          <g class="fa-group">
+            <path
+              fill="currentColor"
+              d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+              class="fa-secondary"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+              class="fa-primary"
+            ></path>
+          </g>
+        </svg>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="phonetics.html" class="nav-link">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fad"
+          data-icon="cat"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="svg-inline--fa fa-cat fa-w-16 fa-9x"
+        >
+          <g class="fa-group">
+            <path
+              fill="currentColor"
+              d="M448 96h-64l-64-64v134.4a96 96 0 0 0 192 0V32zm-72 80a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm80 0a16 16 0 1 1 16-16 16 16 0 0 1-16 16zm-165.41 16a204.07 204.07 0 0 0-34.59 2.89V272l-43.15-64.73a183.93 183.93 0 0 0-44.37 26.17L192 304l-60.94-30.47L128 272v-80a96.1 96.1 0 0 0-96-96 32 32 0 0 0 0 64 32 32 0 0 1 32 32v256a64.06 64.06 0 0 0 64 64h176a16 16 0 0 0 16-16v-16a32 32 0 0 0-32-32h-32l128-96v144a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16V289.86a126.78 126.78 0 0 1-32 4.54c-61.81 0-113.52-44.05-125.41-102.4z"
+              class="fa-secondary"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M376 144a16 16 0 1 0 16 16 16 16 0 0 0-16-16zm80 0a16 16 0 1 0 16 16 16 16 0 0 0-16-16zM131.06 273.53L192 304l-23.52-70.56a192.06 192.06 0 0 0-37.42 40.09zM256 272v-77.11a198.62 198.62 0 0 0-43.15 12.38z"
+              class="fa-primary"
+            ></path>
+          </g>
+        </svg>
+        <span class="link-text">Фонетика</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="morphology.html" class="nav-link">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fad"
+          data-icon="alien-monster"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 576 512"
+          class="svg-inline--fa fa-alien-monster fa-w-18 fa-9x"
+        >
+          <g class="fa-group">
+            <path
+              fill="currentColor"
+              d="M560,128H528a15.99954,15.99954,0,0,0-16,16v80H480V176a15.99954,15.99954,0,0,0-16-16H416V96h48a16.00079,16.00079,0,0,0,16-16V48a15.99954,15.99954,0,0,0-16-16H432a15.99954,15.99954,0,0,0-16,16V64H368a15.99954,15.99954,0,0,0-16,16v48H224V80a15.99954,15.99954,0,0,0-16-16H160V48a15.99954,15.99954,0,0,0-16-16H112A15.99954,15.99954,0,0,0,96,48V80a16.00079,16.00079,0,0,0,16,16h48v64H112a15.99954,15.99954,0,0,0-16,16v48H64V144a15.99954,15.99954,0,0,0-16-16H16A15.99954,15.99954,0,0,0,0,144V272a16.00079,16.00079,0,0,0,16,16H64v80a16.00079,16.00079,0,0,0,16,16h48v80a16.00079,16.00079,0,0,0,16,16h96a16.00079,16.00079,0,0,0,16-16V432a15.99954,15.99954,0,0,0-16-16H192V384H384v32H336a15.99954,15.99954,0,0,0-16,16v32a16.00079,16.00079,0,0,0,16,16h96a16.00079,16.00079,0,0,0,16-16V384h48a16.00079,16.00079,0,0,0,16-16V288h48a16.00079,16.00079,0,0,0,16-16V144A15.99954,15.99954,0,0,0,560,128ZM224,320H160V224h64Zm192,0H352V224h64Z"
+              class="fa-secondary"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M160,320h64V224H160Zm192-96v96h64V224Z"
+              class="fa-primary"
+            ></path>
+          </g>
+        </svg>
+        <span class="link-text">Морфология</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="syntax.html" class="nav-link">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fad"
+          data-icon="space-station-moon-alt"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          class="svg-inline--fa fa-space-station-moon-alt fa-w-16 fa-5x"
+        >
+          <g class="fa-group">
+            <path
+              fill="currentColor"
+              d="M501.70312,224H448V160H368V96h48V66.67383A246.86934,246.86934,0,0,0,256,8C119.03125,8,8,119.0332,8,256a250.017,250.017,0,0,0,1.72656,28.26562C81.19531,306.76953,165.47656,320,256,320s174.80469-13.23047,246.27344-35.73438A250.017,250.017,0,0,0,504,256,248.44936,248.44936,0,0,0,501.70312,224ZM192,240a80,80,0,1,1,80-80A80.00021,80.00021,0,0,1,192,240ZM384,343.13867A940.33806,940.33806,0,0,1,256,352c-87.34375,0-168.71094-11.46094-239.28906-31.73633C45.05859,426.01953,141.29688,504,256,504a247.45808,247.45808,0,0,0,192-91.0918V384H384Z"
+              class="fa-secondary"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M256,320c-90.52344,0-174.80469-13.23047-246.27344-35.73438a246.11376,246.11376,0,0,0,6.98438,35.998C87.28906,340.53906,168.65625,352,256,352s168.71094-11.46094,239.28906-31.73633a246.11376,246.11376,0,0,0,6.98438-35.998C430.80469,306.76953,346.52344,320,256,320Zm-64-80a80,80,0,1,0-80-80A80.00021,80.00021,0,0,0,192,240Zm0-104a24,24,0,1,1-24,24A23.99993,23.99993,0,0,1,192,136Z"
+              class="fa-primary"
+            ></path>
+          </g>
+        </svg>
+        <span class="link-text">Синтаксис</span>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a href="lexicon.html" class="nav-link">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fad"
+          data-icon="space-shuttle"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 512"
+          class="svg-inline--fa fa-space-shuttle fa-w-20 fa-5x"
+        >
+          <g class="fa-group">
+            <path
+              fill="currentColor"
+              d="M32 416c0 35.35 21.49 64 48 64h16V352H32zm154.54-232h280.13L376 168C243 140.59 222.45 51.22 128 34.65V160h18.34a45.62 45.62 0 0 1 40.2 24zM32 96v64h64V32H80c-26.51 0-48 28.65-48 64zm114.34 256H128v125.35C222.45 460.78 243 371.41 376 344l90.67-16H186.54a45.62 45.62 0 0 1-40.2 24z"
+              class="fa-secondary"
+            ></path>
+            <path
+              fill="currentColor"
+              d="M592.6 208.24C559.73 192.84 515.78 184 472 184H186.54a45.62 45.62 0 0 0-40.2-24H32c-23.2 0-32 10-32 24v144c0 14 8.82 24 32 24h114.34a45.62 45.62 0 0 0 40.2-24H472c43.78 0 87.73-8.84 120.6-24.24C622.28 289.84 640 272 640 256s-17.72-33.84-47.4-47.76zM488 296a8 8 0 0 1-8-8v-64a8 8 0 0 1 8-8c31.91 0 31.94 80 0 80z"
+              class="fa-primary"
+            ></path>
+          </g>
+        </svg>
+        <span class="link-text">Лексика</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<main>
+  <header>
+    <a class="namelogo"><h2><img src="../res/cat.webp" class="logo"> Фонетика</h2></a>
+  </header>
+
+  <section>
+    <h3>Гармонии</h3>
+    <h4>Гармония ряда (нёбный сингармонизм)</h4>
+    Гласные делятся на:
+    <ul>
+      <li>гласные <b>непереднего ряда</b>: а, о, у, ы</li>
+      <li>гласные <b>переднего ряда</b>: ә, ө, ү, э, и</li>
+    </ul>
+    Татарские слова (кроме исключений) подчиняются закону <b>сингармонизма</b>:
+    <ul>
+      <li>все гласные в слове бывают только одного ряда</li>
+      <li>любые окончания добавляются только с гласными с соответствующим слову типом</li>
+    </ul>
+    Пример: алма (яблоко) – алмалар (яблоки), песи (кошка) – песиләр (кошки).
+
+    <h4>Гармония губ (губной сингармонизм)</h4>
+    При наличии в первом слоге кратких огублённых звуков [о], [ө] происходит огубление звуков [ы], [э]:
+    <ul>
+      <li>Если в первом слоге стоит <b>[о]</b>, то в следующих слогах [ы] читается как [о]</li>
+      <li>Если в первом слоге стоит <b>[ө]</b>, то в следующих слогах [э] читается как [ө]</li>
+    </ul>
+    Пример: болыт [болот], төлке [төлкө].
+  </section>
+
+  <section>
+    <h3>Алфавит</h3>
+    <h5>С 522 до 922 года использовалась руническая письменность в Тюркском каганате</h5>
+    <h5>С 922 до 1927 года использовалась арабица</h5>
+    <h4>Кириллица – с 1939 года по настоящее время в России</h4>
+    <p>В татарском алфавите 39 букв: 9 гласных и 30 согласных.</p>
+    <p>Отличается от русского алфавита наличием дополнительных 6 букв (<b>ә, ө, ү, җ, ң, һ</b>) и другим или дополнительным произношением 14 русских букв.</p>
+
+    <p><span class="newLetter">Этот цвет</span> обозначает новую букву, а <span class="newPhoneme">этот цвет</span> обозначает, что есть разница в произношении по сравнению с русским языком.</p>
+    
+    <div class="overflowtable">
+      <table border="1">
+        <tr>
+          <th></th>
+          <th>Буква</th>
+          <th>Описание</th>
+          <th>Пример</th>
+          <th>Перевод</th>
+          <th>Транскрипция</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="newPhoneme">А а</td>
+          <td>
+            огублённое <b>[а°]</b> в первом слоге (близок к [о])<br>
+            обычное <b>[а]</b> в остальных слогах
+          </td>
+          <td>алма</td>
+          <td>яблоко</td>
+          <td>[а°лма]</td>
+        </tr>
+        <tr> 
+          <td>2</td>
+          <td class="newLetter">Ә ә</td>
+          <td>
+            <p>как <b>[æ]</b> в <a href="https://youtu.be/qVhaIHk88a8" class="link">английском</a>: cat, black, hat</p>
+            очень мягкий [''a], близок к русскому ['a] в словах «сядь», «глянь», «ряд»
+          </td>
+          <td>cәлам</td>
+          <td>привет</td>
+          <td>[сәләм]</td>
+        </tr>
+        <tr> 
+          <td>3</td>
+          <td>Б б</td>
+          <td>как в русском</td>
+          <td>бал</td>
+          <td>мёд</td>
+          <td>[ба°л]</td>
+        </tr>
+        <tr> 
+          <td>4</td>
+          <td class="newPhoneme">В в</td>
+          <td>
+            </p>скрывает в себе два звука: <b>[в]</b> и <b>[w]</b></p>
+            [в] только в заимствованных из русского языка словах<br>
+            [w] в татарских словах – произносится как сочетание «у» с гласными
+          </td>
+          <td>авыл</td>
+          <td>деревня</td>
+          <td>[а°wыл]</td>
+        </tr>
+        <tr> 
+          <td>5</td>
+          <td class="newPhoneme">Г г</td>
+          <td>
+            <p>скрывает в себе два звука: <b>[г]</b> и <b>[гъ]</b></p>
+            [г] с мягкими гласными в татарских словах и в заимствованных из русского языка словах<br>
+            [гъ] с твёрдыми гласными в татарских словах, звучит как гэканье
+          </td>
+          <td>
+            сөлге<br>
+            гаилә
+          </td>
+          <td>
+            полотенце<br>
+            семья
+          </td>
+          <td>
+            [сөлгө]<br>
+            [гъа°йлә]
+          </td>
+        </tr>
+        <tr> 
+          <td>6</td>
+          <td>Д д</td>
+          <td>как в русском</td>
+          <td>дөрес</td>
+          <td>правильно</td>
+          <td>[дөрөс]</td>
+        </tr>
+        <tr> 
+          <td>7</td>
+          <td class="newPhoneme">Е е</td>
+          <td>
+            в начале слога произносится как [йы] или [йэ]<br>
+            в середине слога произносится как [э]<br>
+            твёрдость или мягкость зависит от других гласных в слове
+          </td>
+          <td>
+            егет<br>
+            каен<br>
+            кием
+          </td>
+          <td>
+            парень<br>
+            берёза<br>
+            одежда
+          </td>
+          <td>
+            [йэгэт]<br>
+            [къа°йын]<br>
+            [кийэм]
+          </td>
+        </tr>
+        <tr> 
+          <td>8</td>
+          <td>Ё ё</td>
+          <td>как в русском</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr> 
+          <td>9</td>
+          <td>Ж ж</td>
+          <td>как в русском</td>
+          <td>жәлләү</td>
+          <td>жалеть</td>
+          <td></td>
+        </tr>
+        <tr> 
+          <td>10</td>
+          <td class="newLetter">Җ җ</td>
+          <td>как <b>[ʒ]</b> в <a href="https://youtu.be/bTxeAiBF61I" class="link">английском</a>: pleasure, leisure, vision</td>
+          <td>җыр</td>
+          <td>песня</td>
+          <td></td>
+        </tr>
+        <tr> 
+          <td>11</td>
+          <td>З з</td>
+          <td>как в русском</td>
+          <td>зур</td>
+          <td>большой</td>
+          <td></td>
+        </tr>
+        <tr> 
+          <td>12</td>
+          <td class="newPhoneme">И и</td>
+          <td>
+            в конце слова произносится с оттенком [ий]<br>
+            в остальном как в русском
+          </td>
+          <td>
+            икмәк<br>
+            тели
+          </td>
+          <td>
+            хлеб<br>
+            желает
+          </td>
+          <td>
+            [икмәк]<br>
+            [телий]
+          </td>
+        </tr>
+        <tr> 
+          <td>13</td>
+          <td>Й й</td>
+          <td>как в русском</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr> 
+          <td>14</td>
+          <td class="newPhoneme">К к</td>
+          <td>
+            <p>скрывает в себе два звука: <b>[к]</b> и <b>[къ]</b></p>
+            [к] с мягкими гласными в татарских словах и в заимствованных из русского языка словах<br>
+            [къ] с твёрдыми гласными в татарских словах
+          </td>
+          <td>
+            кеше<br>
+            кыз
+          </td>
+          <td>
+            человек<br>
+            девочка, девушка, дочь
+          </td>
+          <td>
+            [кэшэ]<br>
+            [къыс]
+          </td>
+        </tr>
+        <tr> 
+          <td>15</td>
+          <td>Л л</td>
+          <td>как в русском</td>
+          <td>ләкин</td>
+          <td>но</td>
+          <td></td>
+        </tr>
+        <tr> 
+          <td>16</td>
+          <td>М м</td>
+          <td>как в русском</td>
+          <td>матур</td>
+          <td>красивый</td>
+          <td>[ма°тур]</td>
+        </tr>
+        <tr> 
+          <td>17</td>
+          <td>Н н</td>
+          <td>как в русском</td>
+          <td>начар</td>
+          <td>плохо, плохой</td>
+          <td>[на°щар]</td>
+        </tr>
+        <tr> 
+          <td>18</td>
+          <td class="newLetter">Ң ң</td>
+          <td>
+            <p>как <b>[ŋ]</b> в <a href="https://youtu.be/rgWse3tloTw" class="link">английском</a>: thanks, song, окончания ing</p>
+            в твёрдых словах звук в горле<br>
+            в мягких словах на нёбе
+          </td>
+          <td>
+            <p>яңа</p>
+            караңгы<br>
+            бәрәңге
+          </td>
+          <td>
+            <p>новый</p>
+            темно, тёмный<br>
+            картошка
+          </td>
+          <td>
+            <p>[йа°ңа]</p>
+            [къа°раңгъы]<br>
+            [бәрәңге]
+          </td>
+        </tr>
+        <tr> 
+          <td>19</td>
+          <td class="newPhoneme">О о</td>
+          <td>
+            <p>пишется только в первом слоге, в последующих слогах пишется «ы», хотя произносится [о]</p>
+            по огублённости между русскими [о] и [у]<br>
+            по краткости как русский [у] в «вуз»
+          </td>
+          <td>
+            <p>озын</p>
+            корт<br>
+            боз
+          </td>
+          <td>
+            <p>длинный</p>
+            жук<br>
+            лёд
+          </td>
+          <td>
+            <p>[озон]</p>
+            [къорт]<br>
+            [бос]
+          </td>
+        </tr>
+        <tr> 
+          <td>20</td>
+          <td class="newLetter">Ө ө</td>
+          <td>
+            <p>пишется только в первом слоге, в последующих слогах пишется «е», хотя произносится [ө]</p>
+            <p>как <b>[ɜː]</b> в <a href="https://youtu.be/zSJJWHymEPw" class="link">английском</a>: learn, nurse, turn. <u style="text-decoration:underline; text-decoration-style: wavy;">но краткий!</u></p>
+            произнесите ['о] в словах «Мёбиус», «лёд», «клён» как можно короче и с бóльшим огублением
+          </td>
+          <td>
+            <p>көзге</p>
+            <p>төн</p>
+            көн
+          </td>
+          <td>
+            <p>зеркало</p>
+            <p>ночь</p>
+            день
+          </td>
+          <td>
+            <p>[көзгө]</p>
+            <p>[төн]</p>
+            [көн]
+          </td>
+        </tr>
+        <tr> 
+          <td>21</td>
+          <td>П п</td>
+          <td>как в русском</td>
+          <td>песи</td>
+          <td>кошка</td>
+          <td>[пэси]</td>
+        </tr>
+        <tr> 
+          <td>22</td>
+          <td>Р р</td>
+          <td>как в русском</td>
+          <td>рәхмәт</td>
+          <td>спасибо</td>
+          <td></td>
+        </tr>
+        <tr> 
+          <td>23</td>
+          <td>С с</td>
+          <td>как в русском</td>
+          <td>су</td>
+          <td>вода</td>
+          <td></td>
+        </tr>
+        <tr> 
+          <td>24</td>
+          <td>Т т</td>
+          <td>как в русском</td>
+          <td>төн</td>
+          <td>ночь</td>
+          <td></td>
+        </tr>
+        <tr> 
+          <td>25</td>
+          <td class="newPhoneme">У у</td>
+          <td>
+            <p>как ударный русский [у]</p>
+            в конце слова может выражать согласный [w]
+          </td>
+          <td>
+            <p>уку</p>
+            тау
+          </td>
+          <td>
+            <p>чтение, учёба</p>
+            гора
+          </td>
+          <td>
+            <p>[укъу]</p>
+            [таw]
+          </td>
+        </tr>
+        <tr>
+          <td>26</td>
+          <td class="newLetter">Ү ү</td>
+          <td>
+            <p>как <b>[uː]</b> в <a href="https://youtu.be/mnKEGLuEzV4" class="link">английском</a>: blue, two, group</p>
+            близкий к нему звук встречается в словах «жюри», «лютня»<br>
+            произнесите эти слова, придав [’у] ещё бóльшее огубление
+          </td>
+          <td>сүз</td>
+          <td>слово</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>27</td>
+          <td>Ф ф</td>
+          <td>как в русском</td>
+          <td>фил</td>
+          <td>слон</td>
+          <td>[филь]</td>
+        </tr>
+        <tr>
+          <td>28</td>
+          <td class="newPhoneme">Х х</td>
+          <td>произносится с более задней артикуляцией и с более сильным придыханием, чем русский [х]</td>
+          <td>хатын</td>
+          <td>жена</td>
+          <td>[ха°тын]</td>
+        </tr>
+        <tr>
+          <td>29</td>
+          <td class="newLetter">Һ һ</td>
+          <td>
+            <p>как <b>[h]</b> в <a href="https://youtu.be/rgWse3tloTw" class="link">английском</a>: hello, ahead, ham</p>
+            произносится более мягко, чем русский [х]
+          </td>
+          <td>һәм</td>
+          <td>и</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>30</td>
+          <td>Ц ц</td>
+          <td>как в русском</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td class="newPhoneme">Ч ч</td>
+          <td>
+            <b>[щ]</b> в татарских словах <br>
+            <b>[ч]</b> в заимствованных из русского словах
+          </td>
+          <td>чәк-чәк</td>
+          <td>чак-чак</td>
+          <td>[щәк-щәк]</td>
+        </tr>
+        <tr>
+          <td>32</td>
+          <td>Ш ш</td>
+          <td>как в русском</td>
+          <td>шәһәр</td>
+          <td>город</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>33</td>
+          <td>Щ щ</td>
+          <td>как в русском</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>34</td>
+          <td>Ъ ъ</td>
+          <td>как в русском только разделительный</td>
+          <td>кулъяулык</td>
+          <td>носовой платок</td>
+          <td>[къул'йа°улыкъ]</td>
+        </tr>
+        <tr>
+          <td>35</td>
+          <td class="newPhoneme">Ы ы</td>
+          <td>
+            <p>как самый частый звук <b>[ə]</b> в <a href="https://youtu.be/KwDJnXt3ZVQ" class="link">английском</a>: about, butter, bottom</p>
+            более короткий, произношением приближается к русским безударным [а] или [о]
+          </td>
+          <td>кызык</td>
+          <td>интересно</td>
+          <td>[къызыкъ]</td>
+        </tr>
+        <tr>
+          <td>36</td>
+          <td class="newPhoneme">Ь ь</td>
+          <td>
+            <p>в конце заимствованного слова определяет мягкость добавляемых окончаний, если он не подчиняется сингармонизму и последняя гласная твёрдая</p>
+            <p>определяет мягкость Е, Ю, Я</p>
+            разделительный
+          </td>
+          <td>
+            <p>сәгать</p>
+            <p>яшь</p>
+            көньяк
+          </td>
+          <td>
+            <p>час</p>
+            <p>молодой</p>
+            юг
+          </td>
+          <td>
+            <p>[сәгъәт]</p>
+            <p>[йәш]</p>
+            [көн'йа°къ]
+          </td>
+        </tr>
+        <tr>
+          <td>37</td>
+          <td class="newPhoneme">Э э</td>
+          <td>
+            <p>в середине и в конце слов обозначается буквой «е»</p>
+            краткий,  близок к русскому мягкому редуцированному [ы]<br>
+            может передавать и согласный гортанный звук ['] гамза
+          </td>
+          <td>
+            <p>эремчек</p>
+            эш<br>
+            маэмай
+          </td>
+          <td>
+            <p>творог</p>
+            работа<br>
+            пёсик
+          </td>
+          <td>
+            <p>[эрэмщэк]</p>
+            [эш]<br>
+            [ма°'май]
+          </td>
+        </tr>
+        <tr>
+          <td>38</td>
+          <td class="newPhoneme">Ю ю</td>
+          <td>
+            обозначает сочетания [йу] или [йү]<br>
+            твёрдость или мягкость зависит от других гласных в слове
+          </td>
+          <td>
+            аю<br>
+            юеш
+          </td>
+          <td>
+            медведь<br>
+            мокрый
+          </td>
+          <td>
+            [а°йу]<br>
+            [йүэш]
+          </td>
+        </tr>
+        <tr>
+          <td>39</td>
+          <td class="newPhoneme">Я я</td>
+          <td>
+            обозначает сочетания [йа] или [йә]<br>
+            твёрдость или мягкость зависит от других гласных в слове
+          </td>
+          <td>
+            ялкын<br>
+            яшен
+          </td>
+          <td>
+            пламя<br>
+            гроза
+          </td>
+          <td>
+            [йа°лкъын]<br>
+            [йәшэн]
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <h4>Латиница – в 2012, 1999 и 1927-1939 годах в Татарстане и по настоящее время зарубежом</h4>    
+    <h6><a href="https://t.me/learn_tt" class="link">Telegram channel «Learn Tatar» on Latin Tatar in English</a></h6>
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
+      <div class="latinTableLeft">
+        <table border="1" style="margin: auto;">
+          <tr>
+            <th></th>
+            <th><span class="newLetter">Кириллица</span></th>
+            <th>Латиница</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>А а</td>
+            <td>A a</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Ә ә</td>
+            <td>Ə ə</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Б б</td>
+            <td>B b</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>В в</td>
+            <td>W w, V v, </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Г г</td>
+            <td>G g, Ğ ğ</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Д д</td>
+            <td>D d</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Е е</td>
+            <td>E e</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Ё ё</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Ж ж</td>
+            <td>J j</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Җ җ</td>
+            <td>C c</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>З з</td>
+            <td>Z z</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>И и</td>
+            <td>I i</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Й й</td>
+            <td>Y y</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>К к</td>
+            <td>K k, Q q</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Л л</td>
+            <td>L l</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>М м</td>
+            <td>M m</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Н н</td>
+            <td>N n</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Ң ң</td>
+            <td>Ñ ñ</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>О о</td>
+            <td>O o</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Ө ө</td>
+            <td>Ö ö</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>П п</td>
+            <td>P p</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Р р</td>
+            <td>R r</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>С с</td>
+            <td>S s</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>Т т</td>
+            <td>T t</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>У у</td>
+            <td>U u</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>Ү ү</td>
+            <td>Ü ü</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>Ф ф</td>
+            <td>F f</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>Х х</td>
+            <td>X x</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>Һ һ</td>
+            <td>H h</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>Ц ц</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>Ч ч</td>
+            <td>Ç ç</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>Ш ш</td>
+            <td>Ş ş</td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>Щ щ</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>Ъ ъ</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>Ы ы</td>
+            <td>I ı</td>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td>Ь ь</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>Э э</td>
+            <td>E e</td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td>Ю ю</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>Я я</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    
+      <div class="latinTableRight">
+        <table border="1" style="margin: auto;">
+          <tr>
+              <th></th>
+              <th><span class="newPhoneme">Latin</span></th>
+              <th>Cyrillic</th>
+              <th>Value</th>
+          </tr>
+          <tr>
+              <td>1</td>
+              <td>A a</td>
+              <td>А а</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Open_back_rounded_vowel" class="link">[ɒ]</a> in «car» in the first syllable, as <a href="https://en.wikipedia.org/wiki/Open_back_unrounded_vowel" class="link">[ɑ]</a> in the rest syllables</td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Ə ə</td>
+              <td>Ә ә</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Near-open_front_unrounded_vowel" class="link">[æ]</a> in «cat»</td>
+          </tr>
+          <tr>
+              <td>3</td>
+              <td>B b</td>
+              <td>Б б</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>4</td>
+              <td>C c</td>
+              <td>Җ җ</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Voiced_alveolo-palatal_fricative" class="link">[ʑ]</a> in «vision»</td>
+          </tr>
+          <tr>
+              <td>5</td>
+              <td>Ç ç</td>
+              <td>Ч ч</td>
+              <td><a href="https://en.wikipedia.org/wiki/Voiceless_alveolo-palatal_fricative" class="link">[ɕ]</a></td>
+          </tr>
+          <tr>
+              <td>6</td>
+              <td>D d</td>
+              <td>Д д</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>7</td>
+              <td>E e</td>
+              <td>Э э, Е е</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>8</td>
+              <td>F f</td>
+              <td>Ф ф</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>9</td>
+              <td>G g</td>
+              <td>Г г</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Voiced_velar_plosive" class="link">[g]</a> in «game»</td>
+          </tr>
+          <tr>
+              <td>10</td>
+              <td>Ğ ğ</td>
+              <td>Г г</td>
+              <td><a href="https://en.wikipedia.org/wiki/Voiced_uvular_fricative" class="link">[ʁ]</a></td>
+          </tr>
+          <tr>
+              <td>11</td>
+              <td>H h</td>
+              <td>Һ һ</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>12</td>
+              <td>I ı</td>
+              <td>Ы ы</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Mid_central_vowel" class="link">[ə]</a> in «bottom»</td>
+          </tr>
+          <tr>
+              <td>13</td>
+              <td>I i</td>
+              <td>И и</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Close_front_unrounded_vowel" class="link">[i]</a> in «free»</td>
+          </tr>
+          <tr>
+              <td>14</td>
+              <td>J j</td>
+              <td>Ж ж</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Voiced_retroflex_fricative" class="link">[ʐ]</a>, used in loanwords</td>
+          </tr>
+          <tr>
+              <td>15</td>
+              <td>K k</td>
+              <td>К к</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>16</td>
+              <td>Q q</td>
+              <td>К к</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Voiceless_uvular_plosive" class="link">[q]</a></td>
+          </tr>
+          <tr>
+              <td>17</td>
+              <td>L l</td>
+              <td>Л л</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>18</td>
+              <td>M m</td>
+              <td>М м</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>19</td>
+              <td>N n</td>
+              <td>Н н</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>20</td>
+              <td>Ñ ñ</td>
+              <td>Ң ң</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Voiced_velar_nasal" class="link">[ŋ]</a> in «song»</td>
+          </tr>
+          <tr>
+              <td>21</td>
+              <td>O o</td>
+              <td>О о</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Near-close_near-back_rounded_vowel" class="link">[ʊ]</a></td>
+          </tr>
+          <tr>
+              <td>22</td>
+              <td>Ö ö</td>
+              <td>Ө ө</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Close-mid_central_rounded_vowel" class="link">[ɵ]</a> in british «nurse»</td>
+          </tr>
+          <tr>
+              <td>23</td>
+              <td>P p</td>
+              <td>П п</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>24</td>
+              <td>R r</td>
+              <td>Р р</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Voiced_dental_and_alveolar_taps_and_flaps" class="link">[ɾ]</a> in scottish english «three»</td>
+          </tr>
+          <tr>
+              <td>25</td>
+              <td>S s</td>
+              <td>С с</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>26</td>
+              <td>Ş ş</td>
+              <td>Ш ш</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Voiceless_postalveolar_fricative" class="link">[ʃ]</a> in «sheep»</td>
+          </tr>
+          <tr>
+              <td>27</td>
+              <td>T t</td>
+              <td>Т т</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>28</td>
+              <td>U u</td>
+              <td>У у</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>29</td>
+              <td>Ü ü</td>
+              <td>Ү ү</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Close_central_rounded_vowel" class="link">[ʉ]</a> in «goose»</td>
+          </tr>
+          <tr>
+              <td>30</td>
+              <td>V v</td>
+              <td>В в</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>31</td>
+              <td>W w</td>
+              <td>В в, У у</td>
+              <td></td>
+          </tr>
+          <tr>
+              <td>32</td>
+              <td>X x</td>
+              <td>Х х</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Voiceless_uvular_fricative" class="link">[χ]</a></td>
+          </tr>
+          <tr>
+              <td>33</td>
+              <td>Y y</td>
+              <td>Й й</td>
+              <td>as <a href="https://en.wikipedia.org/wiki/Voiced_palatal_approximant" class="link">[j]</a> in «you»</td>
+          </tr>
+          <tr>
+              <td>34</td>
+              <td>Z z</td>
+              <td>З з</td>
+              <td></td>
+          </tr>
+        </table>      
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="social-networks">
+    <div class="social-networks-item">
+      <a href="https://www.t.me/tatar_app" class="social-networks-item-logo"><img src="res/tg_icon.svg" class="logo">Telegram</img></a>
+      Подписывайтесь на @tatar_app в Telegram
+    </div>
+    <div class="social-networks-item">
+      <a href="https://www.youtube.com/@tatarcham" class="social-networks-item-logo"><img src="res/yt_icon.webp" class="logo">YouTube</img></a>
+      Подписывайтесь на @tatarcham на YouTube
+    </div>
+    <div class="social-networks-item">
+      <a href="https://www.vk.com/tatarcham" class="social-networks-item-logo"><img src="res/vk_icon.svg" class="logo">VK</img></a>
+      Подписывайтесь на @tatarcham в VK
+    </div>
+  </div>
+
+  <div class="ios-waitlist">
+    <div class="social-networks-item">
+      <a href="https://www.t.me/tatar_app" class="social-networks-item-logo"><img src="res/android_icon.svg" class="logo">Android</img></a>
+      Скачайте приложение на Android
+    </div>
+
+    <div class="social-networks-item">
+      <a href="https://www.t.me/tatarcham_ios" class="social-networks-item-logo"><img src="res/apple_icon.svg" class="logo">iOS</img></a>
+      Лист ожидания приложения для iOS
+    </div>
+  </div>
+
+  <div class="developer">
+    <a href="http://127.0.0.1:5500/Other/TatarchamWeb/kursach/index.html"><img src="/res/logo.svg"></a>
+    <p class="label-small">Copyright © 2024 tatarcham inc. All rights reserved.</p>
+    <span class="label-small">Developed by: <a href="https://t.me/dov4k1n" class="link">@dov4k1n</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

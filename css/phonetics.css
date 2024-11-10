@@ -1,0 +1,65 @@
+.overflowtable {
+  overflow-x: auto;
+  white-space: wrap;
+}
+
+th, td {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+th {
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.newLetter {
+  color: var(--md-sys-color-on-secondary-container);
+  background-color: var(--md-sys-color-secondary-container);
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.newPhoneme {
+  color: var(--md-sys-color-on-error);
+  background-color: var(--md-sys-color-error);
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  font-weight: bold;
+}
+
+.link {
+  color: inherit;
+}
+
+u.definition {
+  text-decoration-style: wavy;
+}
+
+div.latinTableLeft {
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  div.latinTableLeft {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  div.latinTableRight {
+    width: 100%; 
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  div.latinTableLeft {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+
+  div.latinTableRight {
+    width: 50%; 
+    text-align: center;
+  }
+}
