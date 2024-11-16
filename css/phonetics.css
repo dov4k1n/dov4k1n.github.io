@@ -15,22 +15,21 @@ th {
 
 .newLetter {
   color: var(--md-sys-color-on-secondary-container);
-  background-color: var(--md-sys-color-secondary-container);
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-}
-
-.newPhoneme {
-  color: var(--md-sys-color-on-error);
-  background-color: var(--md-sys-color-error);
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
+  background-color: var(--md-sys-color-primary);
+  padding: 0.1rem 0.3rem;
   font-weight: bold;
 }
 
-.link {
-  color: inherit;
+.newPhoneme {
+  color: var(--md-sys-color-on-primary);
+  background-color: var(--md-sys-color-primary-container);
+  padding: 0.1rem 0.3rem;
+  font-weight: bold;
 }
+
+/* .link {
+  color: inherit;
+} */
 
 u.definition {
   text-decoration-style: wavy;

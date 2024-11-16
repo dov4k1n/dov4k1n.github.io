@@ -1,0 +1,52 @@
+button {
+  padding: 0.7rem 2.1rem;
+  border-radius: 100px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  transition: background-color 0.3s ease;
+}
+
+button.primary:hover {
+  background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary);
+  transition: background-color 0.3s ease;
+}
+
+button.secondary {
+  background-color: transparent;
+  color: var(--md-sys-color-on-primary);
+  border-color: var(--md-sys-color-primary);
+  transition: background-color 0.3s ease;
+}
+
+button.secondary:hover {
+  background-color: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-primary);
+  transition: background-color 0.3s ease;
+}
+
+button.support-developers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #39A75F;
+  transition: color 0.3s ease;
+}
+
+button.support-developers:hover {
+  color: var(--md-sys-color-primary);
+  transition: color 0.3s ease;
+}
+
+button.check {
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  transition: background-color 0.3s ease;
+}
