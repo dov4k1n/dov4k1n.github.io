@@ -8,7 +8,7 @@ header {
   vertical-align: center;
   gap: 1rem;
   background-color: var(--md-sys-color-on-primary-container);
-  padding: 0.3rem 3rem 0rem 3rem;
+  padding: 1rem 3rem 1rem 3rem;
 }
 
 .top-navigation {

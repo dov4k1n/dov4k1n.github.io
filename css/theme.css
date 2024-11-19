@@ -5,7 +5,7 @@
 @import url(theme.dark.css); /* (prefers-color-scheme: dark); */
 @import url(buttons.css);
 @import url(hero.css);
-@import url(hero.navigation.css);
+@import url(hero.navbar.css);
 @import url(navbar.css);
 @import url(footer.css);
 @import url(phonetics.css);
@@ -36,10 +36,8 @@ img.logo {
   height: 3rem;
 }
 
-img.hero-block-img {
-  width: auto;
-  height: 360px;
-  padding: 2rem;
+html {
+  scroll-behavior: smooth;
 }
 
 body {

@@ -2,11 +2,11 @@ footer {
   display: flex;
   overflow: auto;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   background-color: #030303;
   /* margin: 0; */
-  margin-left: 1;
-  margin-right: auto;
+  /* margin-left: 1; */
+  /* margin-right: auto; */
   padding: 1rem 0rem;
 }
 
@@ -52,7 +52,7 @@ footer {
 .developer {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   color: var(--md-sys-color-on-primary);
   padding: 0 3rem;
 }
