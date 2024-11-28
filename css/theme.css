@@ -6,7 +6,7 @@
 @import url(buttons.css);
 @import url(hero.css);
 @import url(hero.navbar.css);
-@import url(navbar.css);
+@import url(navigation.drawer.css);
 @import url(footer.css);
 @import url(phonetics.css);
 @import url(morphology.css);
@@ -67,12 +67,16 @@ main {
   padding: 0 10rem;
   display: flex;
   flex-direction: column;
+}
+
+h2 {
+  display: flex;
   justify-content: center;
-  align-items: center;
+  
 }
 
 section {
-  padding: 2rem 0;
+  padding-bottom: 4rem;
 }
 
 .link {
@@ -82,12 +86,20 @@ section {
 
 .link:hover {
   color: var(--md-sys-color-primary-container);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
 
 @media only screen and (max-width: 600px) {
   main {
-    margin: 0;
-    padding-bottom: 5rem;
+    /* display: flex; */
+    /* margin: 0; */
+    padding: 1rem;
+    /* padding-bottom: 5rem; */
+  }
+
+  footer {
+    padding-bottom: 3rem;
   }
 }
 

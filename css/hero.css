@@ -36,3 +36,9 @@ img.hero-block-img {
   height: 360px;
   padding: 0rem;
 }
+
+@media only screen and (max-width: 600px) {
+  img.hero-block-img {
+    size: auto;
+  }
+}
