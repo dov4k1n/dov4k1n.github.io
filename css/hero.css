@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 7rem 0rem;
+  padding: 8rem 0rem;
 }
 
 .hero-title {
@@ -22,6 +22,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  padding-top: 1rem;
 }
 
 .hero-buttons-row {
@@ -34,7 +35,7 @@
 img.hero-block-img {
   width: auto;
   height: 360px;
-  padding: 0rem;
+  padding: 1rem;
 }
 
 @media only screen and (max-width: 600px) {

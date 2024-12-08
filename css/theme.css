@@ -51,6 +51,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--md-sys-color-on-primary);
 }
 
+.center {
+  text-align: center;
+}
+
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
@@ -67,12 +71,6 @@ main {
   padding: 0 10rem;
   display: flex;
   flex-direction: column;
-}
-
-h2 {
-  display: flex;
-  justify-content: center;
-  
 }
 
 section {

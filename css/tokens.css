@@ -47,7 +47,7 @@
   --md-sys-color-error-container-dark: #93000a;
   --md-sys-color-on-error-dark: #690005;
   --md-sys-color-on-error-container-dark: #ffdad6;
-  --md-sys-color-background-dark: #001f2a;
+  --md-sys-color-background-dark: #131F24;/*#001f2a;*/
   --md-sys-color-on-background-dark: #bfe9ff;
   --md-sys-color-surface-dark: #001f2a;
   --md-sys-color-on-surface-dark: #bfe9ff;
@@ -132,8 +132,8 @@
   --md-sys-typescale-label-large-line-height: 20px;
   --md-sys-typescale-label-large-letter-spacing: 0.10px;
   /* label - medium */
-  --md-sys-typescale-label-medium-font-family-name: Montserrat;
-  --md-sys-typescale-label-medium-font-family-style: Bold;
+  --md-sys-typescale-label-medium-font-family-name: Montserrat Bold;
+  --md-sys-typescale-label-medium-font-family-style: Regular;
   --md-sys-typescale-label-medium-font-weight: 500px;
   --md-sys-typescale-label-medium-font-size: 12px;
   --md-sys-typescale-label-medium-line-height: 16px;

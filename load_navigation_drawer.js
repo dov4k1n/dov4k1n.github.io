@@ -1,4 +1,4 @@
-const navigation_drawer = document.createElement('div'); // Создаём контейнер для навигации
+const navigation_drawer = document.createElement('div');
 fetch('../html/navigation_drawer.html')
   .then(response => response.text())
   .then(data => {
@@ -18,3 +18,16 @@ fetch('../html/navigation_drawer.html')
   .catch(error => {
     console.error('Error loading navigation_drawer.html:', error);
   });
+
+// Active state handling:
+
+const navigationList = document.getElementById('navigation-drawer-list');
+const listItems = navigationList.getElementsByClassName('navigation-drawer-list-item');
+
+listItems.forEach(item => {
+  item.addEventListener('click', function(event) {
+    listItems.forEach(listItem => listItem.classList.remove('active'));
+
+    this.classList.add('active');
+  });
+});
