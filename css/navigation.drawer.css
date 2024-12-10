@@ -33,6 +33,10 @@
   border-radius: 0.7rem;
 }
 
+.navigation-drawer-list-item-icon-svg {
+  height: 24px;
+}
+
 .navigation-drawer-list-item:hover .navigation-drawer-list-item-icon {
   background-color: var(--md-sys-color-on-primary-container);
   color: var(--md-sys-color-on-primary);

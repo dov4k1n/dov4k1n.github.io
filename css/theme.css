@@ -10,6 +10,7 @@
 @import url(footer.css);
 @import url(phonetics.css);
 @import url(morphology.css);
+@import url(under.work.css);
 
 @font-face {
   font-family: 'Montserrat';
@@ -83,7 +84,7 @@ section {
 }
 
 .link:hover {
-  color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-primary);
   text-decoration: underline;
   text-underline-offset: 0.5rem;
 }

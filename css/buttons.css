@@ -50,3 +50,74 @@ button.check {
   color: var(--md-sys-color-on-primary);
   transition: background-color 0.3s ease;
 }
+
+.linked-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.page-btn {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border:solid;
+  border-width: 2px;
+  border-radius: 8px;
+  border-color: var(--md-sys-color-on-primary-container);
+  text-decoration: none;
+  color: var(--md-sys-color-on-background);
+}
+
+.page-btn:hover {
+  border-color: var(--md-sys-color-primary);
+}
+
+.page-btn-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.align-left {
+  align-items: start;
+}
+
+.align-right {
+  align-items: end;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.support-btn {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  border:solid;
+  border-width: 2px;
+  border-radius: 100px;
+  border-color: var(--md-sys-color-on-primary-container);
+  text-decoration: none;
+  color: var(--md-sys-color-on-background);
+}
+
+.support-btn:hover {
+  background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary);
+  border-color: var(--md-sys-color-primary-container);
+}
