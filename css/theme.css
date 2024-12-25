@@ -69,7 +69,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
-  padding: 0 10rem;
+  padding: 0rem 4.15rem 0rem 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+main.landing {
+  padding: 0rem 10rem 0rem 10rem;
   display: flex;
   flex-direction: column;
 }

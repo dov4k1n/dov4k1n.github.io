@@ -3,11 +3,14 @@ footer {
   overflow: auto;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(0deg, #030303 0%, var(--md-sys-color-background) 100%);
+  background: #030303;
+  padding: 0.25rem 0;
+  /* background: linear-gradient(0deg, #030303 0%, var(--md-sys-color-background) 100%); */
 }
 
 .social-networks {
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
