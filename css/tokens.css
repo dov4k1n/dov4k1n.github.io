@@ -104,14 +104,14 @@
   --md-sys-typescale-headline-small-line-height: 32px;
   --md-sys-typescale-headline-small-letter-spacing: 0px;
   /* body - large */
-  --md-sys-typescale-body-large-font-family-name: Montserrat;
+  --md-sys-typescale-body-large-font-family-name: Montserrat Regular;
   --md-sys-typescale-body-large-font-family-style: Regular;
   --md-sys-typescale-body-large-font-weight: 400px;
   --md-sys-typescale-body-large-font-size: 20px;
   --md-sys-typescale-body-large-line-height: 24px;
   --md-sys-typescale-body-large-letter-spacing: 0.50px;
   /* body - medium */
-  --md-sys-typescale-body-medium-font-family-name: Montserrat;
+  --md-sys-typescale-body-medium-font-family-name: Roboto/*Montserrat Medium*/;
   --md-sys-typescale-body-medium-font-family-style: SemiBold;
   --md-sys-typescale-body-medium-font-weight: 400px;
   --md-sys-typescale-body-medium-font-size: 16px;

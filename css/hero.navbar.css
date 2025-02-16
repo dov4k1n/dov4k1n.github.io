@@ -1,22 +1,26 @@
 header {
   position: fixed;
-  z-index: 100;
+  z-index: 99;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  background-color: var(--md-sys-color-on-primary-container);
+  /* background-color: var(--md-sys-color-on-primary-container); */
+  /* background-color: var(--md-sys-color-background); */
+  background-color: #131f24cc;
   padding: .25rem 3rem .25rem 3rem;
 }
 
 img.logo {
   width: auto;
   height: 3rem;
+  z-index: 100;
 }
 
 .top-navigation {
+  z-index: 100;
   display: flex;
   flex-direction: row;
   gap: 1rem;

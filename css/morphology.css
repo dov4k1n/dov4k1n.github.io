@@ -1,14 +1,20 @@
 .affix {
-  color: var(--md-sys-color-on-secondary-container);
-  background-color: var(--md-sys-color-secondary-container);
+  color: #F6A849;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  font-weight: bold;
+}
+
+b {
+  color: var(--md-sys-color-primary-container);
   padding-left: 0.2rem;
   padding-right: 0.2rem;
   font-weight: bold;
 }
 
 .example {
-  color: var(--md-sys-color-inverse-on-surface-variant);
-  background-color: var(--md-sys-color-surface-variant);
+  color: white;
+  background-color: var(--md-sys-color-on-primary-container);
   padding-left: 0.2rem;
   padding-right: 0.2rem;
   font-weight: bold;

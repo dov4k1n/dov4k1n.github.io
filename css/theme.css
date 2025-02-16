@@ -92,10 +92,8 @@ section {
 .accent {
   color: white;
   background-color: var(--md-sys-color-primary);
-  padding-left: .25rem;
-  padding-right: .25rem;
+  /* font-weight: bold; */
 }
-
 
 .link:hover {
   color: var(--md-sys-color-primary);
