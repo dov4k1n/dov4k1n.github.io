@@ -113,7 +113,6 @@ hr {
 
 .video-container {
   position: relative;
-  z-index: -1;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625 or 56.25%) */
 }
