@@ -2,10 +2,9 @@ footer {
   display: flex;
   overflow: auto;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background: #030303;
   padding: 0.25rem 0;
-  /* background: linear-gradient(0deg, #030303 0%, var(--md-sys-color-background) 100%); */
 }
 
 .social-networks {
@@ -54,4 +53,17 @@ footer {
   align-items: center;
   color: var(--md-sys-color-on-primary);
   padding: 0 3rem;
+}
+
+.footer-navigation {
+  display: none;
+}
+
+@media only screen and (max-width: 870px) {
+  .footer-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+  } 
 }

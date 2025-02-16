@@ -1,5 +1,5 @@
 const footer = document.createElement('footer');
-fetch('../html/footer.html')
+fetch('html/footer.html')
   .then(response => response.text())
   .then(data => {
     footer.innerHTML = data;

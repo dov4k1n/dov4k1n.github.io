@@ -5,10 +5,14 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  vertical-align: center;
   gap: 1rem;
   background-color: var(--md-sys-color-on-primary-container);
-  padding: 1rem 3rem 1rem 3rem;
+  padding: .25rem 3rem .25rem 3rem;
+}
+
+img.logo {
+  width: auto;
+  height: 3rem;
 }
 
 .top-navigation {
@@ -30,9 +34,24 @@ header {
 }
 
 .top-navigation a:hover {
-  /* background: var(--md-sys-color-secondary); */
   color: var(--md-sys-color-on-primary);
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: var(--md-sys-color-primary-container);
+}
+
+@media only screen and (max-width: 870px) {
+  .top-navigation {
+    display: none;
+  }
+
+  header {
+    display: none;
+  }
+  /* header {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+  } */
 }

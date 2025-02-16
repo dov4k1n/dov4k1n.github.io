@@ -4,8 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tatarçam</title>
-  <meta http-equiv="refresh" content="0; URL=pages/landing.html">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="icon" type="image/png" href="res/cat.webp">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0&icon_names=favorite" />
+  <script src="script.js" defer></script>
 </head>
-<body>
+
+<body id="top">
+  <header>
+    <a href="#top"><img class="logo" src="res/logo.svg" alt="logotype"></a>
+    <nav class="top-navigation">
+      <a href="book/index.html" class="title-medium">Учиться</a>
+      <a href="https://t.me/tatar_app" class="title-medium">Новости</a>
+      <a href="https://boosty.to/tatarcham/donate/" class="title-medium">Поддержать</a>
+      <button class="primary title-medium" onclick="location.href='https://t.me/tatar_app';">Скачать</button>
+    </nav>
+  </header>
+
+  <main class="landing">
+    <section class="hero-block">
+      <div class="hero-left">
+        <h1 class="hero-title">Выучи <span class="green">татарский язык</span> в 2025</h1>
+        <h3 class="headline-small"><span class="afafaf">Удобно. Эффективно. С удовольствием.</span></h3>
+        
+        <div class="hero-buttons">
+          <div class="hero-buttons-row">
+            <button class="primary title-medium" onclick="location.href='https://t.me/tatar_app';">Скачать на Android</button>
+            <a class="secondary-btn title-medium" style="cursor: pointer;" onclick="location.href='book/index.html';">Учиться онлайн</a>
+          </div>
+          <button class="support-developers title-medium" onclick="location.href='https://boosty.to/tatarcham';"><!--<span class="material-symbols-outlined">favorite</span>-->❤️ Поддержать разработчиков</button>
+        </div>
+      </div>
+
+      <img src="res/mockup-4.svg" class="hero-block-img" alt="app screens example">
+    </section>
+
+    <section>
+      <h3><a href="https://vk.com/video-118520293_456239045" class="link">Краткая история татар</a></h3>
+      <div class="video-container">
+        <iframe src="https://vk.com/video_ext.php?oid=-118520293&id=456239045&hd=3" class="video" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="news">
+      <h3>Татарский язык</h3>
+      <p>
+        <span class="accent"><b>Агглютинативный</b></span>, как и все тюркские языки, среди которых: башкирский, казахский, турецкий, азербайджанский и другие.
+        <i>Агглютинативность</i> означает, что все грамматические формы образуются <i>путём прибавления окончаний</i>.
+        Окончания приклеиваются друг к другу, и из-за этого могут получаться очень длинные слова. Например, 
+          <h5 style="overflow-x: auto;" class="center">
+            <i>канәгать<span class="green">лән</span><span class="white">дер</span><span class="red">ел</span><span class="green">мә</span><span class="white">гән</span><span class="red">леге</span><span class="green">гез</span><span class="white">дән</span>
+            </i>
+          </h5>
+          – 31 буква, 8 окончаний [<b>перевод</b>: <i>ввиду того, что вы не были удовлетворены</i>]
+      </p>
+    </section>
+    <hr/>
+  </main>
+  
 </body>
+
 </html>

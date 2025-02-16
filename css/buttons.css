@@ -8,47 +8,55 @@ button {
 button.primary {
   background-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary);
-  transition: background-color 0.3s ease;
+  transition: background-color .2s linear,color .2s linear
 }
 
 button.primary:hover {
   background-color: var(--md-sys-color-primary-container);
   color: var(--md-sys-color-on-primary);
-  transition: background-color 0.3s ease;
+  transition: background-color .2s linear,color .2s linear
 }
 
-button.secondary {
-  background-color: transparent;
-  color: var(--md-sys-color-on-primary);
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .7rem 2.1rem;
+  border:solid;
+  border-width: 2px;
+  border-radius: 100rem;
+  border-color: var(--md-sys-color-on-primary-container);
+  background-color: var(--md-sys-color-on-primary-container);
+  text-decoration: none;
+  color: var(--md-sys-color-on-background);
+  transition: background-color .2s linear,color .2s linear
+}
+
+.secondary-btn:hover {
+  background-color: #0F1419;
   border-color: var(--md-sys-color-primary);
-  transition: background-color 0.3s ease;
-}
-
-button.secondary:hover {
-  background-color: var(--md-sys-color-secondary-container);
-  color: var(--md-sys-color-on-primary);
-  transition: background-color 0.3s ease;
+  transition: background-color .2s linear,color .2s linear
 }
 
 button.support-developers {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
+  gap: .5rem;
   background-color: transparent;
   color: #39A75F;
-  transition: color 0.3s ease;
+  transition: background-color .2s linear,color .2s linear
 }
 
 button.support-developers:hover {
   color: var(--md-sys-color-primary);
-  transition: color 0.3s ease;
+  transition: background-color .2s linear,color .2s linear
 }
 
 button.check {
   background-color: var(--md-sys-color-primary);
   color: var(--md-sys-color-on-primary);
-  transition: background-color 0.3s ease;
+  transition: 0.15s ease;
 }
 
 .linked-navigation {
@@ -67,7 +75,7 @@ button.check {
   padding: 1rem;
   border:solid;
   border-width: 2px;
-  border-radius: 8px;
+  border-radius: .75rem;
   border-color: var(--md-sys-color-on-primary-container);
   text-decoration: none;
   color: var(--md-sys-color-on-background);
