@@ -10,7 +10,7 @@ smart-punctuation = true
 preferred-dark-theme = "ayu"
 git-repository-url = "https://github.com/dov4k1n/dov4k1n.github.io"
 git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/dov4k1n/dov4k1n.github.io/edit/main/book/{path}"
+edit-url-template = "https://github.com/dov4k1n/dov4k1n.github.io/edit/main/{path}"
 
 [output.html.print]
 enable = true
