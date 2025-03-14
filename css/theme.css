@@ -44,6 +44,10 @@ body {
   padding: 0;
 }
 
+p {
+  line-height: 1.75rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: var(--md-sys-color-on-primary);
 }
@@ -53,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.25rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -61,7 +65,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--md-sys-color-on-background);
+  /* background: var(--md-sys-color-on-background); */
+  background: #afafaf;
 }
 
 main {
