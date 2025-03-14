@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
