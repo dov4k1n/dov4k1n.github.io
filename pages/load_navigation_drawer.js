@@ -1,5 +1,5 @@
 const navigation_drawer = document.createElement('div');
-fetch('../html/navigation_drawer.html')
+fetch('navigation_drawer.html')
   .then(response => response.text())
   .then(data => {
     navigation_drawer.innerHTML = data;
