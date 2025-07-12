@@ -43,7 +43,7 @@ button.support-developers {
   flex-direction: row;
   align-items: center;
   gap: .5rem;
-  background-color: transparent;
+  background-color: black;
   color: #39A75F;
   transition: background-color .2s linear,color .2s linear
 }
@@ -114,10 +114,7 @@ button.check {
   flex-grow: 1;
   flex-direction: row;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding: 1rem 2.5rem;
   border:solid;
   border-width: 2px;
   border-radius: 100px;
