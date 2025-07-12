@@ -105,6 +105,16 @@ section {
   text-underline-offset: 0.5rem;
 }
 
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.underline-td {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
 hr {
   background-color: #4e4e4e;
   height: 1px;
@@ -186,5 +196,12 @@ h3, h4, h6 {
 @media only screen and (max-width: 1024px) {
   main.landing {
     padding: 0rem 5% 0rem 5%;
+  }
+
+}
+
+@media only screen and (max-width: 570px) {
+  .underline-td {
+    text-underline-offset: 0.2rem;
   }
 }
