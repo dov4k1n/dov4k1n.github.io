@@ -76,14 +76,14 @@ main {
 }
 
 main.landing {
-  padding: 0 19.5rem;
+  /*padding: 0 19.5rem;*/
   display: flex;
   flex-direction: column;
 }
 
 section {
-  padding-bottom: 0rem;
-  max-width: 66em;
+  padding-top: 0rem;
+  max-width: 80ch;
   margin: 0 auto;
   width: 100%;
 }
@@ -116,11 +116,12 @@ section {
 }
 
 hr {
-  background-color: #4e4e4e;
+  display: none;
   height: 1px;
+  background-color: #4e4e4e;
   border: 0;
   width: 100%;
-  max-width: 66em;
+  max-width: 80ch;
 }
 
 .history-img {
@@ -159,6 +160,20 @@ h3, h4, h6 {
   margin: 0.5em 0 0.5em 0;
 }
 
+table, th, td {
+  border: 1px dotted #4e4e4e;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  text-align: justify;
+  padding: 1rem;
+}
+
 .table-downloads {
   word-break: break-word;
 }
@@ -195,7 +210,7 @@ h3, h4, h6 {
 
 @media only screen and (max-width: 1024px) {
   main.landing {
-    padding: 0rem 5% 0rem 5%;
+    padding: 0rem 3% 0rem 3%;
   }
 
 }

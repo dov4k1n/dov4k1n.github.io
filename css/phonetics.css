@@ -3,16 +3,6 @@
   white-space: wrap;
 }
 
-th, td {
-  text-align: center;
-  padding: 0.5rem;
-}
-
-th {
-  font-weight: bold;
-  font-size: 1.15rem;
-}
-
 .newLetter {
   color: var(--md-sys-color-on-secondary-container);
   background-color: var(--md-sys-color-primary);
