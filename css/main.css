@@ -3,7 +3,7 @@
 @import url(typography.module.css);
 @import url(buttons.css);
 @import url(hero.css);
-@import url(hero.navbar.css);
+@import url(navbar.css);
 @import url(footer.css);
 
 @font-face {
