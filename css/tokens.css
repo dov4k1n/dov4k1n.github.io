@@ -1,35 +1,4 @@
 :root {
-  /* light */
-  --md-sys-color-primary-light: #006590;
-  --md-sys-color-on-primary-light: #88ceff;
-  --md-sys-color-primary-container-light: #c8e6ff;
-  --md-sys-color-on-primary-container-light: #001e2e;
-  --md-sys-color-secondary-light: #00658f;
-  --md-sys-color-on-secondary-light: #ffffff;
-  --md-sys-color-secondary-container-light: #c7e7ff;
-  --md-sys-color-on-secondary-container-light: #001e2e;
-  --md-sys-color-tertiary-light: #6750a4;
-  --md-sys-color-on-tertiary-light: #ffffff;
-  --md-sys-color-tertiary-container-light: #e9ddff;
-  --md-sys-color-on-tertiary-container-light: #22005c;
-  --md-sys-color-error-light: #ba1a1a;
-  --md-sys-color-error-container-light: #ffdad6;
-  --md-sys-color-on-error-light: #ffffff;
-  --md-sys-color-on-error-container-light: #410002;
-  --md-sys-color-background-light: #fafcff;
-  --md-sys-color-on-background-light: #001f2a;
-  --md-sys-color-surface-light: #fafcff;
-  --md-sys-color-on-surface-light: #001f2a;
-  --md-sys-color-surface-variant-light: #dde3ea;
-  --md-sys-color-on-surface-variant-light: #41484d;
-  --md-sys-color-outline-light: #71787e;
-  --md-sys-color-inverse-on-surface-light: #e1f4ff;
-  --md-sys-color-inverse-surface-light: #003547;
-  --md-sys-color-inverse-primary-light: #88ceff;
-  --md-sys-color-shadow-light: #000000;
-  --md-sys-color-surface-tint-light: #006590;
-  --md-sys-color-outline-variant-light: #c1c7ce;
-  --md-sys-color-scrim-light: #000000;
   /* dark */
   --md-sys-color-primary-dark: #004A86;
   --md-sys-color-on-primary-dark: #ffffff;
@@ -47,11 +16,11 @@
   --md-sys-color-error-container-dark: #93000a;
   --md-sys-color-on-error-dark: #690005;
   --md-sys-color-on-error-container-dark: #ffdad6;
-  --md-sys-color-background-dark: #131F24;/*#001f2a;*/
-  --md-sys-color-on-background-dark: /*#bfe9ff*/ #e1e1e1;
+  --md-sys-color-background-dark: #131F24;
+  --md-sys-color-on-background-dark: #e1e1e1;
   --md-sys-color-surface-dark: #001f2a;
   --md-sys-color-on-surface-dark: #bfe9ff;
-  --md-sys-color-surface-variant-dark: #626367;/*#41484d;*/
+  --md-sys-color-surface-variant-dark: #626367;
   --md-sys-color-on-surface-variant-dark: #c1c7ce;
   --md-sys-color-outline-dark: #8D96A0;
   --md-sys-color-inverse-on-surface-dark: #001f2a;
@@ -111,7 +80,7 @@
   --md-sys-typescale-body-large-line-height: 24px;
   --md-sys-typescale-body-large-letter-spacing: 0.50px;
   /* body - medium */
-  --md-sys-typescale-body-medium-font-family-name: Roboto /*Montserrat Medium*/, Arial;
+  --md-sys-typescale-body-medium-font-family-name: 'Montserrat Medium', Arial;
   --md-sys-typescale-body-medium-font-family-style: SemiBold;
   --md-sys-typescale-body-medium-font-weight: 400px;
   --md-sys-typescale-body-medium-font-size: 16px;

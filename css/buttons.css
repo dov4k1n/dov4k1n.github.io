@@ -6,14 +6,14 @@ button {
 }
 
 button.primary {
-  background-color: var(--md-sys-color-primary);
-  color: var(--md-sys-color-on-primary);
+  background-color: var(--blue);
+  color: var(--white);
   transition: background-color .2s linear,color .2s linear
 }
 
 button.primary:hover {
-  background-color: var(--md-sys-color-primary-container);
-  color: var(--md-sys-color-on-primary);
+  background-color: var(--green);
+  color: var(--white);
   transition: background-color .2s linear,color .2s linear
 }
 
@@ -25,16 +25,16 @@ button.primary:hover {
   border:solid;
   border-width: 2px;
   border-radius: 100rem;
-  border-color: var(--md-sys-color-on-primary-container);
-  background-color: var(--md-sys-color-on-primary-container);
+  border-color: var(--surface);
+  background-color: var(--surface);
   text-decoration: none;
-  color: var(--md-sys-color-on-background);
+  color: var(--white);
   transition: background-color .2s linear,color .2s linear
 }
 
 .secondary-btn:hover {
-  background-color: #0F1419;
-  border-color: var(--md-sys-color-primary);
+  background-color: var(--surface-hover);
+  border-color: var(--blue);
   transition: background-color .2s linear,color .2s linear
 }
 
@@ -49,13 +49,13 @@ button.support-developers {
 }
 
 button.support-developers:hover {
-  color: var(--md-sys-color-primary);
+  color: var(--blue);
   transition: background-color .2s linear,color .2s linear
 }
 
 button.check {
-  background-color: var(--md-sys-color-primary);
-  color: var(--md-sys-color-on-primary);
+  background-color: var(--blue);
+  color: var(--white);
   transition: 0.15s ease;
 }
 
@@ -78,13 +78,13 @@ button.check {
   border:solid;
   border-width: 2px;
   border-radius: .75rem;
-  border-color: var(--md-sys-color-on-primary-container);
+  border-color: var(--secondary);
   text-decoration: none;
-  color: var(--md-sys-color-on-background);
+  color: var(--on-background);
 }
 
 .page-btn:hover {
-  border-color: var(--md-sys-color-primary);
+  border-color: var(--blue);
 }
 
 .page-btn-text {
@@ -118,13 +118,13 @@ button.check {
   border:solid;
   border-width: 2px;
   border-radius: 100px;
-  border-color: var(--md-sys-color-on-primary-container);
+  border-color: var(--secondary);
   text-decoration: none;
-  color: var(--md-sys-color-on-background);
+  color: var(--on-background);
 }
 
 .support-btn:hover {
-  background-color: var(--md-sys-color-primary-container);
-  color: var(--md-sys-color-on-primary);
-  border-color: var(--md-sys-color-primary-container);
+  background-color: var(--green);
+  color: var(--white);
+  border-color: var(--green);
 }
