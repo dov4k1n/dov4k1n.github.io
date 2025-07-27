@@ -4,11 +4,7 @@
 @import url(buttons.css);
 @import url(hero.css);
 @import url(hero.navbar.css);
-@import url(navigation.drawer.css);
 @import url(footer.css);
-@import url(phonetics.css);
-@import url(morphology.css);
-@import url(under.work.css);
 
 @font-face {
   font-family: 'Montserrat';
