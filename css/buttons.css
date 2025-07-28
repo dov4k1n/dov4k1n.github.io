@@ -1,37 +1,37 @@
 .btn {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: .7rem 2.1rem;
-  border:solid;
-  border-width: 2px;
-  border-radius: 100rem;
-  text-decoration: none;
-  color: var(--white);
-  cursor: pointer;
-  transition: background-color .2s linear,color .2s linear
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .7rem 2.1rem;
+    border:solid;
+    border-width: 2px;
+    border-radius: 100rem;
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color .2s linear,color .2s linear
 }
 
 .btn.blue-bg-brdr {
-  border-color: var(--blue);
-  background-color: var(--blue);
+    border-color: var(--blue);
+    background-color: var(--blue);
 }
 
 .btn.surface-bg-brdr {
-  border-color: var(--surface);
-  background-color: var(--surface);
+    border-color: var(--surface);
+    background-color: var(--surface);
 }
 
 .btn:hover {
-  transition: background-color .2s linear,color .2s linear
+    transition: background-color .2s linear,color .2s linear
 }
 
 .btn.blue-bg-brdr:hover {
-  border-color: var(--green);
-  background-color: var(--surface-hover);
+    border-color: var(--green);
+    background-color: var(--surface-hover);
 }
 
 .btn.surface-bg-brdr:hover {
-  background-color: var(--surface-hover);
-  border-color: var(--blue);
+    background-color: var(--surface-hover);
+    border-color: var(--blue);
 }
