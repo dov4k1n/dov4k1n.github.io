@@ -1,30 +1,10 @@
-@import url(tokens.css);
 @import url(colors.css);
-@import url(typography.module.css);
 @import url(buttons.css);
 @import url(hero.css);
 @import url(navbar.css);
 @import url(footer.css);
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat/montserrat_regular.ttf') format('truetype');
-}
 
-@font-face {
-  font-family: 'Montserrat Semibold';
-  src: url('fonts/Montserrat/montserrat_semibold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Montserrat Bold';
-  src: url('fonts/Montserrat/montserrat_bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Montserrat ExtraBold';
-  src: url('fonts/Montserrat/montserrat_extrabold.ttf') format('truetype');
-}
 
 html {
   scroll-behavior: smooth;
@@ -38,11 +18,9 @@ body {
   padding: 0;
 }
 
-p {
-  line-height: 1.75rem;
-}
+h1 { font-size: 2em; }
 
-h1, h2, h3, h4, h5, h6 {
+p, td, h1 {
   color: var(--white);
 }
 
@@ -59,8 +37,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  /* background: var(--md-sys-color-on-background); */
-  background: #afafaf;
+  background: var(--on-background);
 }
 
 main {
@@ -70,7 +47,6 @@ main {
 }
 
 main.landing {
-  /*padding: 0 19.5rem;*/
   display: flex;
   flex-direction: column;
 }
@@ -90,32 +66,16 @@ section {
 .accent {
   color: white;
   background-color: var(--blue);
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 
 .link:hover {
   color: var(--blue);
   text-decoration: underline;
-  text-underline-offset: 0.5rem;
 }
 
 .underline {
   text-decoration: underline;
-  text-underline-offset: 0.5rem;
-}
-
-.underline-td {
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
-}
-
-hr {
-  display: none;
-  height: 1px;
-  background-color: #4e4e4e;
-  border: 0;
-  width: 100%;
-  max-width: 80ch;
 }
 
 .history-img {
@@ -126,12 +86,6 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-}
-
-.qr {
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -147,11 +101,7 @@ hr {
 }
 
 li {
-  margin: 1rem 0; 
-}
-
-h3, h4, h6 {
-  margin: 0.5em 0 0.5em 0;
+  margin: 0rem 0; 
 }
 
 table, th, td {
@@ -173,10 +123,6 @@ td {
 }
 
 @media only screen and (max-width: 1024px) {
-  .qr {
-    flex-direction: column;
-  }
-
   .screenshot {
     width: 100%;
     height: auto;
@@ -207,10 +153,4 @@ td {
     padding: 0rem 3% 0rem 3%;
   }
 
-}
-
-@media only screen and (max-width: 570px) {
-  .underline-td {
-    text-underline-offset: 0.2rem;
-  }
 }

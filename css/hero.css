@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0rem 0 0 0;
 }
 
 .hero-title {
-  margin: 0;
   text-align: center;
 }
 
@@ -30,9 +28,4 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
-}
-
-img.hero-block-img {
-  width: 66em;
-  height: auto;
 }

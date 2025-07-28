@@ -24,7 +24,7 @@ img.logo {
   padding: 0 0 0 4rem;
 }
 
-.top-navigation a {
+.top-navigation a.reg {
   background-color: transparent;
   color: var(--on-background);
   display: flex;
@@ -35,7 +35,7 @@ img.logo {
   transition: background-color 0.3s ease;
 }
 
-.top-navigation a:hover {
+.top-navigation a.reg:hover {
   color: var(--blue);
   text-decoration: underline;
   text-underline-offset: 0.75rem;

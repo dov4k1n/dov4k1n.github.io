@@ -1,23 +1,4 @@
-button {
-  padding: 0.7rem 2.1rem;
-  border-radius: 100px;
-  border-color: transparent;
-  cursor: pointer;
-}
-
-button.primary {
-  background-color: var(--blue);
-  color: var(--white);
-  transition: background-color .2s linear,color .2s linear
-}
-
-button.primary:hover {
-  background-color: var(--green);
-  color: var(--white);
-  transition: background-color .2s linear,color .2s linear
-}
-
-.secondary-btn {
+.btn {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -25,106 +6,32 @@ button.primary:hover {
   border:solid;
   border-width: 2px;
   border-radius: 100rem;
+  text-decoration: none;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color .2s linear,color .2s linear
+}
+
+.btn.blue-bg-brdr {
+  border-color: var(--blue);
+  background-color: var(--blue);
+}
+
+.btn.surface-bg-brdr {
   border-color: var(--surface);
   background-color: var(--surface);
-  text-decoration: none;
-  color: var(--white);
+}
+
+.btn:hover {
   transition: background-color .2s linear,color .2s linear
 }
 
-.secondary-btn:hover {
+.btn.blue-bg-brdr:hover {
+  border-color: var(--green);
+  background-color: var(--surface-hover);
+}
+
+.btn.surface-bg-brdr:hover {
   background-color: var(--surface-hover);
   border-color: var(--blue);
-  transition: background-color .2s linear,color .2s linear
-}
-
-button.support-developers {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: .5rem;
-  background-color: black;
-  color: #39A75F;
-  transition: background-color .2s linear,color .2s linear
-}
-
-button.support-developers:hover {
-  color: var(--blue);
-  transition: background-color .2s linear,color .2s linear
-}
-
-button.check {
-  background-color: var(--blue);
-  color: var(--white);
-  transition: 0.15s ease;
-}
-
-.linked-navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  padding-bottom: 2rem;
-}
-
-.page-btn {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  border:solid;
-  border-width: 2px;
-  border-radius: .75rem;
-  border-color: var(--secondary);
-  text-decoration: none;
-  color: var(--on-background);
-}
-
-.page-btn:hover {
-  border-color: var(--blue);
-}
-
-.page-btn-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.align-left {
-  align-items: start;
-}
-
-.align-right {
-  align-items: end;
-}
-
-.justify-start {
-  justify-content: start;
-}
-
-.justify-end {
-  justify-content: end;
-}
-
-.support-btn {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem 2.5rem;
-  border:solid;
-  border-width: 2px;
-  border-radius: 100px;
-  border-color: var(--secondary);
-  text-decoration: none;
-  color: var(--on-background);
-}
-
-.support-btn:hover {
-  background-color: var(--green);
-  color: var(--white);
-  border-color: var(--green);
 }
