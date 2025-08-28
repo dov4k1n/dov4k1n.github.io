@@ -18,7 +18,7 @@ head_file="$BUILD_BLOCKS/head-depth-$depth.html"
 mkdir -p "$(dirname "$DEST_DIR/$output_html")"
 
 cat "$head_file" > "$DEST_DIR/$output_html"
-../lib/smu/smu "$SRC_DIR/$input_md" | awk '{print "    " $0}' >> "$DEST_DIR/$output_html"
+../lib/bin/smu "$SRC_DIR/$input_md" | awk '{print "    " $0}' >> "$DEST_DIR/$output_html"
 cat "$BUILD_BLOCKS/foot.html" >> "$DEST_DIR/$output_html"
 
 fname_ru=$(head -n 1 "$SRC_DIR/$input_md" | sed -n '1s/^# //p')
