@@ -1,0 +1,39 @@
+#! /bin/bash
+
+cd "$(dirname "$0")/../learn"
+
+cat ../build-blocks/head.html > toc.html
+
+generate_toc() {
+    local indent="$1"
+    local dir="$2"
+
+    echo "${indent}<ol>" >> toc.html
+
+    for entry in "$dir"/*; do
+        [ -e "$entry" ] || continue
+        name=$(basename "$entry")
+
+        [ "$name" = "toc.html" ] && continue
+
+        if [ -d "$entry" ]; then
+            display_name=$(echo "$name" | sed -E 's/^[0-9]+-//')
+            echo "${indent}    <li>$display_name" >> toc.html
+            generate_toc "        $indent" "$entry"
+            echo "${indent}    </li>" >> toc.html
+
+        elif [ -f "$entry" ]; then
+            clean_path="${entry#./}"
+            clean_path="${clean_path//\/\//\/}"
+            fname_ru=$(head -n 1 "$entry" | sed -n 's/.*<!--\(.*\)-->.*/\1/p')
+            echo "${indent}    <li><a href=\"$clean_path\"" \
+                 "class=\"no-underline toc\">$fname_ru</a></li>" >> toc.html
+        fi
+    done
+
+    echo "${indent}</ol>" >> toc.html
+}
+
+generate_toc "    " .
+
+cat ../build-blocks/foot.html >> toc.html

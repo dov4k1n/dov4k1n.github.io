@@ -1,0 +1,25 @@
+#!/bin/bash
+
+SRC_DIR="../src"
+DEST_DIR="../learn"
+BUILD_BLOCKS="../build-blocks"
+
+input_md="$1"
+output_html="$2"
+
+depth=$(grep -o "/" <<< "$output_html" | wc -l) # count slashes
+depth=$((depth - 1))
+(( depth < 0 )) && depth=0 # prevent negative depth
+head_file="$BUILD_BLOCKS/head-depth-$depth.html"
+
+# fallback to depth-0 if file is missing
+[ -f "$head_file" ] || head_file="$BUILD_BLOCKS/head-depth-0.html"
+
+mkdir -p "$(dirname "$DEST_DIR/$output_html")"
+
+cat "$head_file" > "$DEST_DIR/$output_html"
+../lib/smu/smu "$SRC_DIR/$input_md" | awk '{print "    " $0}' >> "$DEST_DIR/$output_html"
+cat "$BUILD_BLOCKS/foot.html" >> "$DEST_DIR/$output_html"
+
+fname_ru=$(head -n 1 "$SRC_DIR/$input_md" | sed -n '1s/^# //p')
+sed -i "1i\<!--$fname_ru-->" "$DEST_DIR/$output_html"

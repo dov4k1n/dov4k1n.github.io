@@ -1,0 +1,5 @@
+#! /bin/bash
+find . -type f -name "*.md" -exec sed -i 's/\t/    /g' {} +
+
+# check for tabs
+grep -nP '\t' *
