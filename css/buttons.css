@@ -31,6 +31,11 @@
     background-color: var(--surface-hover);
 }
 
+.btn.blue-bg-brdr-active {
+    border-color: var(--green);
+    background-color: var(--surface-hover);
+}
+
 .btn.surface-bg-brdr:hover {
     background-color: var(--surface-hover);
     border-color: var(--blue);

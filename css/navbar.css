@@ -36,10 +36,19 @@ img.logo {
 }
 
 .top-navigation a.reg:hover {
-    color: var(--blue);
+    color: var(--white);
     text-decoration: underline;
     text-underline-offset: 0.75rem;
-    text-decoration-color: var(--blue);
+    text-decoration-thickness: 0.125rem;
+    text-decoration-color: var(--green);
+}
+
+.top-navigation a.active {
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 0.75rem;
+    text-decoration-thickness: 0.125rem;
+    text-decoration-color: var(--green);
 }
 
 @media only screen and (max-width: 1024px) {

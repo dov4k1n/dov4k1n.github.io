@@ -1,0 +1,70 @@
+@import url(colors.css);
+@import url(buttons.css);
+@import url(navbar.css);
+@import url(tables.css);
+@import url(pagestruct.css);
+
+
+html {
+    text-rendering: optimizeSpeed;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--on-background);
+    margin: 0;
+}
+
+main {
+    max-width: 80ch;
+    margin: 0 auto;
+    width: 100%;
+}
+
+p, td {
+    color: var(--white);
+}
+
+h1 {
+    color: var(--white);
+    text-align: center;
+}
+
+h3 {
+    padding-top: 2rem;
+}
+
+code {
+    background-color: var(--black);
+    color: var(--orange);
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+pre {
+    margin: 0.5rem;
+}
+
+blockquote {
+    background-color: var(--surface);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+}
+
+strong {
+    color: var(--strong);
+}
+
+a.no-underline {
+    text-decoration: none;
+}
+
+a.toc {
+    color: var(--orange);
+}
+
+a.toc:hover {
+    text-decoration: underline;
+    color: var(--white);
+}

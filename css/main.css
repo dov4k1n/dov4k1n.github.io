@@ -1,5 +1,7 @@
 @import url(colors.css);
 @import url(buttons.css);
+@import url(tables.css);
+@import url(pagestruct.css);
 @import url(hero.css);
 @import url(navbar.css);
 @import url(footer.css);
@@ -38,24 +40,6 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: var(--on-background);
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-}
-
-main.landing {
-    display: flex;
-    flex-direction: column;
-}
-
-section {
-    padding-top: 0rem;
-    max-width: 80ch;
-    margin: 0 auto;
-    width: 100%;
 }
 
 .link {
@@ -104,23 +88,6 @@ li {
     margin: 0rem 0; 
 }
 
-table, th, td {
-    border: 1px dotted #4e4e4e;
-    border-collapse: collapse;
-}
-
-table {
-    width: 100%;
-}
-
-td {
-    text-align: justify;
-    padding: 1rem;
-}
-
-.table-downloads {
-    word-break: break-word;
-}
 
 @media only screen and (max-width: 1024px) {
     .screenshot {
@@ -138,19 +105,4 @@ td {
         flex-direction: column;
         align-items: start;
     }
-}
-
-@media only screen and (min-width: 1000px) {
-    main.landing {
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    main.landing {
-        padding: 0rem 3% 0rem 3%;
-    }
-
 }

@@ -1,0 +1,29 @@
+table, tr, th, td {
+    border: 1px dotted var(--border);
+    border-collapse: collapse;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+th {
+    padding: 0 1rem;
+}
+
+.table-downloads {
+    word-break: break-word;
+}
+
+@media only screen and (max-width: 1024px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
