@@ -1,3 +1,9 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -10,10 +16,18 @@ main.landing {
 }
 
 section {
-    padding-top: 0rem;
+    padding: 0rem;
     max-width: 80ch;
-    margin: 0 auto;
     width: 100%;
+}
+
+p {
+    margin: 0.5rem;
+    word-break: break-word;
+}
+
+li {
+    margin: 0.1rem;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -26,6 +40,6 @@ section {
 
 @media only screen and (max-width: 1024px) {
     main.landing {
-        padding: 0rem 3% 0rem 3%;
+        margin: 0rem 3% 0rem 3%;
     }
 }

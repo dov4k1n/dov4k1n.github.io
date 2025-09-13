@@ -1,11 +1,13 @@
 @import url(colors.css);
 @import url(buttons.css);
 @import url(navbar.css);
+@import url(footer.css);
 @import url(tables.css);
 @import url(pagestruct.css);
 
 
 html {
+    scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
 }
 
@@ -21,8 +23,12 @@ main {
     width: 100%;
 }
 
-p, td {
+p, td, li {
     color: var(--white);
+}
+
+li.dir {
+    color: var(--on-background);
 }
 
 h1 {
@@ -54,6 +60,11 @@ blockquote {
 
 strong {
     color: var(--strong);
+}
+
+.link {
+    color: var(--white);
+    text-decoration: none;
 }
 
 a.no-underline {

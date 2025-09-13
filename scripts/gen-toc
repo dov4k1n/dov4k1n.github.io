@@ -18,7 +18,7 @@ generate_toc() {
 
         if [ -d "$entry" ]; then
             display_name=$(echo "$name" | sed -E 's/^[0-9]+-//')
-            echo "${indent}    <li>$display_name" >> toc.html
+            echo "${indent}    <li class="dir">$display_name" >> toc.html
             generate_toc "        $indent" "$entry"
             echo "${indent}    </li>" >> toc.html
 
