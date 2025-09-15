@@ -1,13 +1,11 @@
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
-    overflow-wrap: break-word;
+    overflow-wrap: justify;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
 }
 
 main.landing {
@@ -16,14 +14,13 @@ main.landing {
 }
 
 section {
-    padding: 0rem;
     max-width: 80ch;
     width: 100%;
 }
 
 p {
-    margin: 0.5rem;
-    word-break: break-word;
+    text-align: justify;
+    line-height: 1.5em;
 }
 
 li {
@@ -40,6 +37,7 @@ li {
 
 @media only screen and (max-width: 1024px) {
     main.landing {
-        margin: 0rem 3% 0rem 3%;
+        width: 90%;
+        padding: 0rem 3%;
     }
 }

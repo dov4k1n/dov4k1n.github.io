@@ -67,6 +67,11 @@ strong {
     text-decoration: none;
 }
 
+.link:hover {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
 a.no-underline {
     text-decoration: none;
 }
