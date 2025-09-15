@@ -11,5 +11,6 @@ for i in $(seq 0 $max_depth); do
     output="${input%.html}-depth-$i.html"
     cp $input $output
     for j in $(seq $i); do sed -i 's/href="/href="..\//' "$output"; done
+    for j in $(seq $i); do sed -i "s/href='/href='..\//" "$output"; done
     for j in $(seq $i); do sed -i 's/src="/src="..\//' "$output"; done
 done
