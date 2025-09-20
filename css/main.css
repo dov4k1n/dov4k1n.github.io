@@ -47,6 +47,14 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
 }
 
+a {
+    color: var(--orange);
+}
+
+a:hover {
+    color: var(--white);
+}
+
 .accent {
     color: white;
     background-color: var(--blue);
