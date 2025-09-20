@@ -41,6 +41,7 @@ h3 {
 }
 
 code {
+    font-size: 1em;
     background-color: var(--black);
     color: var(--orange);
     display: inline-block;
